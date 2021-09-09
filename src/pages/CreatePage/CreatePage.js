@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './CreatePage.module.scss';
 import { ANSWER_PAGE_URL } from '../../constants';
 import { Typography, QuizCreation } from '../../components';
+import styles from './CreatePage.module.scss';
 
 const CreatePage = () => (
     <div className={styles.page}>

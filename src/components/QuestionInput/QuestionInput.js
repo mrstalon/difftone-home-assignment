@@ -2,10 +2,10 @@ import React, { useState, useCallback, useMemo } from 'react';
 import { useDispatch } from 'react-redux';
 import clsx from 'clsx';
 
-import styles from './QuestionInput.module.scss';
 import { addQuestion, clearQuestions } from '../../store';
 import { ANSWER_TYPES } from '../../constants';
 import { FormControlLabel, TextareaAutosize, Button } from '../../components';
+import styles from './QuestionInput.module.scss';
 
 const QuestionInput = () => {
     const dispatch = useDispatch();

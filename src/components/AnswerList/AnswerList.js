@@ -1,9 +1,9 @@
 import React, { useEffect, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
-import styles from './AnswerList.module.scss';
 import { FormControlLabel, TextareaAutosize, Typography } from '../../components';
 import { useSelectorOfAnswers, initAnswers, useSelectorOfQuestions, updateAnswer, clearAnswers } from '../../store';
+import styles from './AnswerList.module.scss';
 
 const AnswerList = () => {
     const dispatch = useDispatch();

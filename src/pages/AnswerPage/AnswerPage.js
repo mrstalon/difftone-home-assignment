@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './AnswerPage.module.scss';
 import { INDEX_PAGE_URL } from '../../constants';
-import { useSelectorOfTitle } from '../../store';
+import { useTitleSelector } from '../../store';
 import { Typography, AnswerList } from '../../components';
+import styles from '../CreatePage/CreatePage.module.scss';
 
 const AnswerPage = () => {
-    const title = useSelectorOfTitle();
+    const title = useTitleSelector();
 
     return (
         <div className={styles.page}>

@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
-import styles from './QuestionsList.module.scss';
 import { Typography, Button } from '../../components';
 import { useSelectorOfQuestions, removeQuestion } from '../../store';
+import styles from './QuestionsList.module.scss';
 
 const QuestionsList = () => {
     const dispatch = useDispatch();

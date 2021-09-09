@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './QuizCreation.module.scss';
 import { TitleInput, QuestionInput, QuestionsList } from '../../components';
+import styles from './QuizCreation.module.scss';
 
 const QuizCreation = () => (
     <div className={styles.container}>

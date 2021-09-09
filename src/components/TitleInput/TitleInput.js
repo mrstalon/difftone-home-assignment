@@ -1,13 +1,13 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-import styles from './TitleInput.module.scss';
-import { useSelectorOfTitle, updateTitle } from '../../store';
+import { useTitleSelector, updateTitle } from '../../store';
 import { FormControlLabel, Input } from '../../components';
+import styles from './TitleInput.module.scss';
 
 const TitleInput = () => {
     const dispatch = useDispatch();
-    const title = useSelectorOfTitle();
+    const title = useTitleSelector();
     const [value, setValue] = useState(title);
 
     useEffect(() => {
